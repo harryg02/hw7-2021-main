@@ -31,13 +31,8 @@ document.querySelector("#faster").addEventListener("click", function() {
 	console.log("Current Video Speed is " + video.playbackRate);
 });
 
-document.querySelector("#faster").addEventListener("click", function() {
-	video.playbackRate += 0.1
-	console.log("Current Video Speed is " + video.playbackRate);
-});
-
 document.querySelector("#skip").addEventListener("click", function() {
-	video.currentTime += 5
+	video.currentTime += 10
 	 if (video.currentTime >= video.duration) {
 		video.currentTime = 0
 	 }
@@ -58,7 +53,7 @@ document.querySelector("#mute").addEventListener("click", function() {
 
 document.querySelector("#slider").addEventListener("input", function() {
 	video.volume = this.value / 100
-	console.log("Current Video volume is " + video.volume);
+	console.log("Current Video volume is " + video.volume + "%");
 });
 
 document.querySelector("#vintage").addEventListener("click", function() {
