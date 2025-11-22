@@ -58,5 +58,5 @@ document.querySelector("#mute").addEventListener("click", function() {
 
 document.querySelector("#slider").addEventListener("input", function() {
 	video.volume = this.value / 100
-	console.log("Current Video Speed is " + video.volume);
+	console.log("Current Video volume is " + video.volume);
 });
